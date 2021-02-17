@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="employeeDetail"
+            type="com.sifar.whiterabbit.feature.employeedetail.EmployeeDetail" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:weightSum="1">
+
+        <!--Key-->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:text="@{employeeDetail.key}"
+            android:textColor="@color/off_white"
+            android:textSize="12sp"
+            tools:text="Name" />
+
+
+        <!--Value-->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_weight="0.85"
+            android:text="@{`: `+ employeeDetail.value}"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            tools:text=": John Doe" />
+
+    </LinearLayout>
+</layout>

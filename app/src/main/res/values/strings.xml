@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">White Rabbit</string>
+
+    <string name="action_retry">RETRY</string>
+    <string name="emps_loading">Loading…</string>
+    <string name="hint_search">Search</string>
+    <string name="emp_detail_name">Name</string>
+    <string name="emp_detail_username">Username</string>
+    <string name="emp_detail_email">Email</string>
+    <string name="emp_detail_address">Address</string>
+    <string name="emp_detail_website">Website</string>
+    <string name="emp_detail_company">Company</string>
+</resources>
