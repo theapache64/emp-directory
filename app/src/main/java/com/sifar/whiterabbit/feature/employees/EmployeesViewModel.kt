@@ -1,6 +1,5 @@
 package com.sifar.whiterabbit.feature.employees
 
-import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -9,15 +8,18 @@ import com.sifar.whiterabbit.data.remote.employees.Employee
 import com.sifar.whiterabbit.data.repo.EmployeeRepo
 import com.sifar.whiterabbit.util.calladapter.flow.Resource
 import com.sifar.whiterabbit.util.livedata.SingleLiveEvent
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.onStart
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
 /**
  * Created by theapache64 : Feb 17 Wed,2021 @ 17:48
  */
-class EmployeesViewModel @ViewModelInject constructor(
+@HiltViewModel
+class EmployeesViewModel @Inject constructor(
     private val employeesRepo: EmployeeRepo
 ) : ViewModel() {
 

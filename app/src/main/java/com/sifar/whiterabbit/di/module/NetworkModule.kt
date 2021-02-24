@@ -5,7 +5,7 @@ import com.sifar.whiterabbit.util.calladapter.flow.FlowResourceCallAdapterFactor
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
-import dagger.hilt.android.components.ApplicationComponent
+import dagger.hilt.components.SingletonComponent
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 import javax.inject.Singleton
@@ -14,7 +14,7 @@ import javax.inject.Singleton
  * Created by theapache64 : Feb 17 Wed,2021 @ 17:39
  */
 @Module
-@InstallIn(ApplicationComponent::class)
+@InstallIn(SingletonComponent::class)
 class NetworkModule {
 
     @Singleton
